@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/img_facebok"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/img_main_margin_top"
+        android:src="@drawable/image_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_email_phone"
+        android:layout_below="@id/img_facebok"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black"
+        android:background="@drawable/edt_border"
+        android:hint="@string/hint_email_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_below="@id/edt_email_phone"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:textColor="@color/black"
+        android:background="@drawable/edt_border"
+        android:padding="@dimen/text_padding"
+        android:hint="@string/hint_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/ckb_remember_me"
+        android:text="@string/remember_me"
+        android:textColor="@color/white"
+        android:layout_below="@id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/ckb_remember_me"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_border"
+        android:textSize="@dimen/text_size_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/btn_sign_up"
+        android:text="@string/text_sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:padding="@dimen/text_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/edt_question"
+        android:text="@string/text_question"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_border"
+        android:textSize="@dimen/text_size_large"
+        android:paddingTop="@dimen/question_padding_top"
+        android:paddingBottom="@dimen/question_padding_bottom"
+        android:paddingRight="@dimen/question_padding_right"
+        android:paddingLeft="@dimen/question_padding_left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
